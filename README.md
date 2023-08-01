@@ -27,3 +27,21 @@ Here we can search by category and get details of all the products that belong t
 
 **Sofa** category
 ![SofaCategory](./ApiTestingImages/category2.PNG)
+
+## All Products
+
+Shows list of all products
+
+![AllProducts](./ApiTestingImages/find.PNG)
+
+## Update Product
+
+Updating blue sofa
+
+![UpdateBlueSofa](./ApiTestingImages/update.PNG)
+
+## Delete Product
+
+Deleting blue sofa and in response we can see we only have two objects red sofa and wood dining table
+
+![DeleteBlueSofa](./ApiTestingImages/delete.PNG)
