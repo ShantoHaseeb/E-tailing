@@ -89,4 +89,41 @@ module.exports = {
       res.status(400).send(e.message);
     }
   },
+  addtocart: async (req, res) => {
+    const { userId, carId, price } = req.body;
+
+    try {
+      const user = await Users.findById(userId);
+      const userCart = user.cart;
+      if (user.cart[carId]) {
+        userCart[carId] = 1;
+      } else {
+        userCart[carId] = 1;
+        userCart.count += 1;
+        userCart.total = Number(userCart.total) + Number(price);
+        user.cart = userCart;
+        user.markModified("cart");
+        await user.save();
+        res.status(200).json(user);
+      }
+    } catch (e) {
+      res.status(400).send(e.message);
+    }
+  },
+  removecart: async (req, res) => {
+    const { userId, carId, price } = req.body;
+    try {
+      const user = await Users.findById(userId);
+      const userCart = user.cart;
+      userCart.total -= Number(userCart[carId]) * Number(price);
+      userCart.count -= userCart[carId];
+      delete userCart[carId];
+      user.cart = userCart;
+      user.markModified("cart");
+      await user.save();
+      res.status(200).json(user);
+    } catch (e) {
+      res.status(400).send(e.message);
+    }
+  },
 };

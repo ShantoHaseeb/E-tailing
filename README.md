@@ -45,3 +45,15 @@ Updating blue sofa
 Deleting blue sofa and in response we can see we only have two objects red sofa and wood dining table
 
 ![DeleteBlueSofa](./ApiTestingImages/delete.PNG)
+
+## Create Request
+
+Request for a particular product
+
+![RequestProduct](./ApiTestingImages/addreq.PNG)
+
+## Get all Request
+
+Get all the requested products
+
+![GetProductRequest](./ApiTestingImages/getreq.PNG)
