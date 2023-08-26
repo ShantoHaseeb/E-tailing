@@ -57,3 +57,13 @@ Request for a particular product
 Get all the requested products
 
 ![GetProductRequest](./ApiTestingImages/getreq.PNG)
+
+## Write Review
+
+Post Reviews about particular product
+![WriteReview](./ApiTestingImages/review.png)
+
+## Get Reviews
+
+Get all the reviews of a particular product
+![GetReview](./ApiTestingImages/getReviews.png)

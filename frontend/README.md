@@ -33,3 +33,7 @@
 ## Add to Cart Page
 
 ![CartPage](./FrontendImages/addtocart.PNG)
+
+## Review
+
+![ReviewPage](./FrontendImages/review.png)
